@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HCI User Study</title>
+  <title>Instructions</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -17,22 +17,52 @@
       <h2>Task Overview</h2>
       <p>
         가상의 주사위를 손으로 잡아서, 방향과 위치를 맞춰 빈 주사위 모양에 겹치는 작업입니다.
-        [task]: three fingers, green outline, target dwell, timeout
-        [procedure]: {practice + task + questionnaire} * 3 + questionnaire
+        <div class="video-wrapper">
+          <iframe src="https://drive.google.com/file/d/1Ap_DE1yxuV53O7Q3ub1uzR-3qdRZRicY/preview" allow="autoplay"></iframe>
+        </div>
+        <br>
+        <br>
+
+        <h3>Key Points</h3>
+        <ul>
+          <li><b>주사위 겹치기</b>: 꽉 찬 주사위를 잡아서 빈 주사위와 모양이 일치하도록 조작합니다.</li>
+          <li><b>초록색 테두리 확인</b>: 올바르게 겹쳐지면 주사위에 초록색 테두리가 생깁니다.</li>
+          <li><b>1초 동안 자세 유지</b>: 초록색 테두리가 생긴 상태에서 1초 동안 정지하여 다음 시도로 넘어갑니다.</li>
+          <li><b>30초 타임아웃</b>: 주사위를 <u>손으로 잡은 시점</u>부터 30초를 계산합니다.</li>
+        </ul>
+
+        <div class="image-gallery">
+        <!-- Replace src with your local image paths, e.g. images/condition-o-1.png -->
+          <div class="image-placeholder">
+            <img src="images/main_1.png" alt="Image 1"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span class="label" style="display:none;">images/condition-o-1.png</span>
+          </div>
+          <div class="image-placeholder">
+            <img src="images/main_2.png" alt="Image 2"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span class="label" style="display:none;">images/condition-o-2.png</span>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <h3>Procedure</h3>
+        <img src="images/procedure.png" alt="procedure" />
       </p>
     </div>
 
     <div class="card-grid">
       <a class="card" href="condition-o.html">
-        <div class="tag">Condition</div>
+        <!-- <div class="tag">Condition</div> -->
         <h3>Condition O</h3>
       </a>
       <a class="card" href="condition-x.html">
-        <div class="tag">Condition</div>
+        <!-- <div class="tag">Condition</div> -->
         <h3>Condition X</h3>
       </a>
       <a class="card" href="condition-y.html">
-        <div class="tag">Condition</div>
+        <!-- <div class="tag">Condition</div> -->
         <h3>Condition Y</h3>
       </a>
     </div>
