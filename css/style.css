@@ -87,14 +87,15 @@ main {
   margin-top: 0;
 }
 
-.intro .video-wrapper {
+/* Video */
+.video-wrapper {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   margin-bottom: 16px
 }
 
-.intro .video-wrapper iframe {
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -192,6 +193,11 @@ main {
   border-bottom: 1px solid #eee;
 }
 
+.condition-page section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
 .condition-page .instructions p {
   color: #444;
   font-size: 0.97rem;
@@ -212,9 +218,16 @@ main {
 /* Image gallery */
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
   margin-bottom: 16px;
+}
+
+.intro .image-gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.condition-page .image-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 .image-placeholder {
